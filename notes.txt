@@ -1,0 +1,18 @@
+-main.ts file from main execution start
+-index.html which will serve to user angular use SPA(Single page application)
+-app folder  where we write code 
+-app-routing-module is used for routing
+IN angular.json file - 
+        projectType: the type of the project. The value “application” indicates that the project will represent an application that can be launched in a browser.
+
+        root: points to the project files folder relative to the working environment. An empty value corresponds to the root folder of the project.
+
+        sourceRoot: Specifies the root folder of the source files. The place where all application files are actually defined.
+
+        schematics section of settings is used for generating new files with CLI. For example, if I use the command ‘ng generate’ component by default component will use an SCSS file for styles.
+        
+        architect: Specifies the settings for building the project. Everyone knows the commands “ng serve” or “ng build”. Inside the architect section, we can find settings for “serve” and “build” commands. We also could create our own architect settings and run them with the c
+
+{{}} - interpolation
+[] - propery 
+() - event binding
