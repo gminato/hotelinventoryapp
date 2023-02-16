@@ -20,28 +20,31 @@ export class RoomsComponent {
       roomNo:101,
       roomType: 'Deluxe Room' ,
       amenities: 'Air Conditioner Free Wi-Fi, TV, Bathroom, Kitchen',
-      price: 50,
+      price: 1000,
       photos :'https://images.deepai.org/art-image/a4bfcad34c97466880c15b31544cb854/pastel-pink-yellow-blue-stars-graffiti-thumb.jpg' ,
       checkInTime: new Date( '11-Nov-2022'),
       checkOutTime: new Date( '12-Nov-2023'),
+      rating:4.32343
     },
     {
       roomNo:102,
       roomType: 'Deluxe Room' ,
       amenities: 'Air Conditioner Free Wi-Fi, TV, Bathroom, Kitchen',
-      price: 50,
+      price: 1800,
       photos :'https://images.deepai.org/art-image/a4bfcad34c97466880c15b31544cb854/pastel-pink-yellow-blue-stars-graffiti-thumb.jpg' ,
       checkInTime: new Date( '10-Nov-2023'),
       checkOutTime: new Date( '12-Nov-2023'),
+      rating:4.43112
     },
     {
       roomNo:103,
       roomType: 'Private Room' ,
       amenities: 'Air Conditioner Free Wi-Fi, TV, Bathroom, Kitchen',
-      price: 50,
+      price: 5000,
       photos :'https://images.deepai.org/art-image/a4bfcad34c97466880c15b31544cb854/pastel-pink-yellow-blue-stars-graffiti-thumb.jpg' ,
       checkInTime: new Date( '10-Nov-2023'),
       checkOutTime: new Date( '12-Nov-2023'),
+      rating:4.52322
     },
 
   ]

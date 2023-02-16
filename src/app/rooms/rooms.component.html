@@ -18,14 +18,17 @@
             <th>Room Amenities</th>
             <th>Checkin Time</th>
             <th>Checkout Time</th>
+            <th>Rating</th>
         </tr>
         <tr *ngFor="let room of roomList;let e= even" [ngStyle]="e ? {'background-color':'#E5D1FA'} : {'background-color':'#ECF2FF'}">
-            <th>{{room.roomNo}}</th>
-            <th>{{room.roomType}}</th>
-            <th>{{room.price}}</th>
-            <th>{{room.amenities}}</th>
-            <th>{{room.checkInTime}}</th>
-            <th>{{room.checkOutTime}}</th>
+            <td>{{room.roomNo}}</td>
+            <td>{{room.roomType}}</td>
+            <td>{{room.price | currency : 'INR'}}</td>
+            <td>{{room.amenities | titlecase}}</td>
+            <td>{{room.checkInTime | date : 'dd/MMM/yyyy'}}</td>
+            <td>{{room.checkOutTime | date : 'dd/MMM/yyyy'}}</td>
+            <td>{{room.rating | number : '1.1-2'  }}</td>
+
         </tr>
     </table>
 </div>
