@@ -61,4 +61,19 @@ export class RoomsComponent implements OnInit {
     this.roomSelected = event
     console.log(event);
   }
+
+  addRoom() {
+    let room:RoomList = ({
+      roomNo:104,
+      roomType: 'Guest Room' ,
+      amenities: 'Air Conditioner Free Wi-Fi, TV, Bathroom, Kitchen',
+      price: 500,
+      photos :'https://images.deepai.org/art-image/a4bfcad34c97466880c15b31544cb854/pastel-pink-yellow-blue-stars-graffiti-thumb.jpg' ,
+      checkInTime: new Date( '11-Nov-2022'),
+      checkOutTime: new Date( '12-Nov-2023'),
+      rating:4.0
+    });
+    // this.roomList.push(room);
+    this.roomList = [...this.roomList,room]
+  }
 }
