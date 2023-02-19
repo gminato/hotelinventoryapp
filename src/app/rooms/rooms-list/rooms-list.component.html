@@ -1,0 +1,22 @@
+<table>
+    <tr style="background-color: #FFF4D2;">
+        <th> Room No</th>
+        <th>Room Type</th>
+        <th>Room Price</th>
+        <th>Room Amenities</th>
+        <th>Checkin Time</th>
+        <th>Checkout Time</th>
+        <th>Rating</th>
+        <th>select room</th>
+    </tr>
+    <tr *ngFor="let room of roomList;let e= even" [ngStyle]="e ? {'background-color':'#E5D1FA'} : {'background-color':'#ECF2FF'}">
+        <td>{{room.roomNo}}</td>
+        <td>{{room.roomType}}</td>
+        <td>{{room.price | currency : 'INR'}}</td>
+        <td>{{room.amenities | titlecase}}</td>
+        <td>{{room.checkInTime | date : 'dd/MMM/yyyy'}}</td>
+        <td>{{room.checkOutTime | date : 'dd/MMM/yyyy'}}</td>
+        <td>{{room.rating | number : '1.1-2'  }}</td>
+        <td><button (click) = "selectRoom(room)">Select</button></td>
+    </tr>
+</table>

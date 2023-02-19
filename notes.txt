@@ -46,3 +46,20 @@ build in directive-
 [ngStyle]
 
 stars are non-attribute directive
+
+Lifecycle hooks-
+        Component instance has lifecycle hooks which can help you to hook into different
+        events on Components.
+        Lifecycle ends when component is destroyed.
+        Lifecycle hooks called after constructor is called
+        constructor is only used in injection it should not have any blocking code
+        constructor should not have any blocking code
+how they called in order
+        ngOnChanges
+        ngOnInit
+        ngDoCheck
+        ngAfterContentInit
+        ngAfterContentChecked
+        ngAfterViewInit
+        ngAfterViewChecked
+        ngOnDestroy
